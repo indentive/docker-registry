@@ -1,1 +1,5 @@
 registry.password
+*.crt
+*.key
+*.csr
+*.srl
