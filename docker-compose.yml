@@ -6,6 +6,8 @@ nginx:
     - registry:registry
   volumes:
     - ./nginx/:/etc/nginx/conf.d:ro
+    #- /etc/letsencrypt/live/docker.indentive.se/:/cert/:ro
+    - /etc/ssl/certs/:/etc/ssl/certs/:ro
 
 registry:
   image: registry:2
